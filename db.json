@@ -1,0 +1,58 @@
+{
+  "professores": [
+    {
+      "nome": "Pedro",
+      "perfil": "Professor",
+      "disciplina": "Desenvolvimento",
+      "ativo": true,
+      "id": 2
+    },
+    {
+      "nome": "Márcio",
+      "disciplina": "Todas",
+      "perfil": "Coordenador",
+      "id": 3,
+      "ativo": false
+    },
+    {
+      "nome": "Rual",
+      "perfil": "Professor",
+      "disciplina": "Desenvolvimento",
+      "ativo": true,
+      "id": 4
+    },
+    {
+      "nome": "Luiz Arthur",
+      "perfil": "Coordenador",
+      "disciplina": "Programação",
+      "ativo": true,
+      "id": 5
+    }
+  ],
+  "alunos": [
+    {
+      "id": 4,
+      "nome": "Anderson",
+      "turma": "Turma 2 - manhã",
+      "ativo": true
+    },
+    {
+      "id": 5,
+      "nome": "Mario",
+      "turma": "Turma 2 - manhã",
+      "ativo": true
+    },
+    {
+      "nome": "Augusto",
+      "turma": "Turma 2 - manhã",
+      "ativo": false,
+      "id": 6
+    },
+    {
+      "nome": "Luiz Arthur",
+      "turma": "Turma 2 - manhã",
+      "ativo": true,
+      "id": 7
+    }
+  ]
+}

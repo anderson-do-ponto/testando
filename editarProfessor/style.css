@@ -1,0 +1,321 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #e0e0e0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: "Nunito", sans-serif;
+}
+
+.topo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+}
+
+.imgTopo {
+  margin-left: 10px;
+}
+
+.perfilUser {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 25px;
+}
+
+.imgPerfil {
+  margin: 10px;
+}
+
+.retanglos {
+  position: relative;
+  z-index: 2;
+  display: flex;
+}
+
+.retanglo1 {
+  width: 20%;
+  height: 4px;
+  background-color: #aa6f34;
+}
+
+.retanglo2 {
+  width: 20%;
+  height: 4px;
+  background-color: #f48221;
+}
+
+.retanglo3 {
+  width: 20%;
+  height: 4px;
+  background-color: #d2772e;
+}
+
+.retanglo4 {
+  width: 20%;
+  height: 4px;
+  background-color: #faa61a;
+}
+
+.retanglo5 {
+  width: 20%;
+  height: 4px;
+  background-color: #f9e423;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 20%;
+  min-height: 100%;
+  background-color: #f9e423;
+}
+
+.menuInicio {
+  box-sizing: border-box;
+  padding: 30px;
+  display: flex;
+  gap: 5px;
+  width: 100%;
+  height: 50px;
+  align-items: center;
+  color: #aa6f34;
+  border-left: 8px solid #f9e423;
+}
+.menuInicio:hover {
+  border-left: 8px solid #f48221;
+  background-color: #faa61a;
+  color: #ffffff;
+}
+
+.menuInicioUsuario {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.containerMain {
+  flex-grow: 1;
+  padding: 20px;
+  width: 78%;
+}
+
+.titulo1 {
+  color: #aa6f34;
+  text-align: center;
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%;
+}
+
+.titulo2 {
+  color: #757575;
+  text-align: center;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%;
+}
+
+.faleConosco {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+.divisaoUsuarios {
+  flex-direction: column;
+}
+
+.menuUsuarios {
+  box-sizing: border-box;
+  width: 100%;
+  cursor: pointer;
+}
+
+.menuImagens {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  justify-content: space-between;
+  padding: 30px;
+  border-left: 8px solid #f9e423;
+  height: 4px;
+  color: #aa6f34;
+}
+
+.menuImagens:hover {
+  border-left: 8px solid #f48221;
+  background-color: #faa61a;
+  color: #ffffff;
+}
+
+.imagemBotao {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.uluser {
+  display: none;
+  list-style-type: none;
+}
+
+.uluser li {
+  background-color: #faa61a;
+  padding: 20px;
+  border-left: 8px solid #f48221;
+  padding-left: 66px;
+}
+
+.uluser li:hover {
+  background-color: #f48221;
+}
+
+.uluser a {
+  text-decoration: none;
+  color: #ffffff;
+  /* margin-left: 32px; */
+}
+
+.conteudo {
+  display: flex;
+  flex-grow: 1;
+}
+
+.imagemVolta {
+  width: 60%;
+  border-radius: 50%;
+}
+
+.cabecalhoNovoCadastro {
+  display: flex;
+}
+
+.novoCadastro {
+  width: 100%;
+  height: 40%;
+  background-color: #ffffff;
+  border-radius: 16px;
+  margin-top: 5px;
+  
+}
+
+.containerCadstro {
+  padding: 20px;
+}
+
+.containerbox {
+    display: flex;
+    gap: 23px;
+    width: 100%;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.inputBox {
+  display: flex;
+  flex-direction: column;
+  width: 23%;
+  cursor: pointer;
+}
+
+input {
+  width: 100%;
+  padding: 6px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+}
+
+.inputBox select {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  margin-left: 7px;
+  margin-top: 0px;
+  height: 30px;
+  cursor: pointer;
+}
+
+
+.spanInputBox {
+    position: relative;
+    margin-top: -27px;
+    margin-left: 10px;
+}
+
+
+.spanInputBox .ativo {
+  position: absolute;
+  margin-left: 30px;
+  width: 20px;
+  top: 36px;
+  left: -33px;
+  
+}
+
+#ativoAt {
+  display: none;
+}
+
+.switch {
+  position: relative;
+  background-color: #f33;
+  width: 33px;
+  height: 13px;
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+  margin-top: 6px;
+  margin-left: 9px;
+}
+
+.slider {
+  position: absolute;
+  background-color: white;
+  border-radius: 50%;
+  width: 17px;
+  height: 17px;
+  transition: all 0.5s ease-in-out;
+  left: 3px;
+}
+
+#ativoAt:checked ~ .switch {
+  background: #00c247;
+}
+
+#ativoAt:checked ~ .switch .slider {
+  transform: translateX(122%);
+}
+
+.ativo {
+  margin-left: 10px;
+}
+
+.botaoSalva {
+    border-radius: 8px;
+    background: #00C247;
+    width: 24%;
+    border: none;
+    height: 35px;
+    margin-top: 20px;
+    color: #ffffff;
+    text-decoration: none;
+    cursor: pointer;
+}

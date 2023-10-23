@@ -1,0 +1,311 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: "Nunito", sans-serif;
+    background-color: #e0e0e0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .topo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+  }
+  
+  .imgTopo {
+    margin-left: 10px;
+  }
+  
+  .perfilUser {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 25px;
+  }
+  
+  .imgPerfil {
+    margin: 10px;
+  }
+  
+  .retanglos {
+    position: relative;
+    z-index: 2;
+    display: flex;
+  }
+  
+  .retanglo1 {
+    width: 20%;
+    height: 4px;
+    background-color: #aa6f34;
+  }
+  
+  .retanglo2 {
+    width: 20%;
+    height: 4px;
+    background-color: #f48221;
+  }
+  
+  .retanglo3 {
+    width: 20%;
+    height: 4px;
+    background-color: #d2772e;
+  }
+  
+  .retanglo4 {
+    width: 20%;
+    height: 4px;
+    background-color: #faa61a;
+  }
+  
+  .retanglo5 {
+    width: 20%;
+    height: 4px;
+    background-color: #f9e423;
+  }
+  
+  .menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 20%;
+    min-height: 100%;
+    background-color: #f9e423;
+  }
+  
+  .menuInicio {
+    box-sizing: border-box;
+    padding: 30px;
+    display: flex;
+    gap: 5px;
+    width: 100%;
+    height: 50px;
+    align-items: center;
+    color: #AA6F34;
+    border-left: 8px solid #f9e423;
+  }
+  .menuInicio:hover{
+    border-left: 8px solid #F48221;
+    background-color: #FAA61A;
+    color: #ffffff;
+  }
+  
+  .menuInicioUsuario {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+
+  .imgmenu:hover{
+    color: #ffffff;
+  }
+  
+  .cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+
+  }
+  .contenierImagems{
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .primeiraImagem {
+    width: 60%;
+    
+  }
+
+  .imagemAredondada {
+    border-radius: 20px;
+  }
+ .segundaImagem{
+    background-color:#ffffff;
+    border-radius: 20px;
+    padding: 10px;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+ }
+
+ .terceiraImagem {
+  width: 90%;
+ }
+
+  .imagensDolado {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+  }
+
+  .primeoraNumero {
+    font-size: 14px;
+
+  }
+
+  .segundoNumero {
+    font-size: 50px;
+    font-weight: 700;
+  }
+  
+  .titulo1 {
+  color:#AA6F34;
+  text-align: center;
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%;
+  }
+  
+  .titulo2 {
+  color: #757575;
+  text-align: center;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%;
+  }
+  
+  .faleConosco {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+  }
+  
+  .divisaoUsuarios {
+    flex-direction: column;
+  }
+  
+  .menuUsuarios {
+    box-sizing: border-box;
+    width: 100%;
+    
+  }
+  
+  .menuImagens {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    justify-content: space-between;
+    padding: 30px;
+    border-left: 8px solid #f9e423;
+    height: 4px;
+    color:#AA6F34;
+  }
+  
+  .menuImagens:hover {
+    border-left: 8px solid #F48221;
+    background-color: #FAA61A;
+    color: #ffffff;
+  }
+  
+  .imagemBotao {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .uluser {
+    display: none;
+    list-style-type: none;
+    
+  }
+  
+  .uluser li {
+    background-color: #faa61a;
+    padding: 20px;
+    border-left: 8px solid #f48221;
+    padding-left: 66px;
+  }
+  
+  .uluser li:hover {
+    background-color: #f48221;
+  }
+  
+  .uluser a {
+    text-decoration: none;
+    color: #ffffff;
+    /* margin-left: 32px; */
+  }
+  
+  .conteudo {
+    display: flex;
+    flex-grow: 1;
+  }
+
+  .containerMain {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-grow: 1;
+    width: 80%;
+  }
+
+  .containerCabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    height: 12%;
+    /* background-color: red; */
+  }
+
+  .cabecalhoImagemc {
+    width: 16%;
+    height: 36%;
+    /* background-color: green; */
+  }
+  .containerImagensc {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    width: 95%;
+    height: 77%;
+    /* background-color: red; */
+  }
+  .primeraColuna {
+    width: 70%;
+    height: 100%;
+    /* background-color: green; */
+  }
+
+  .seguandaColuna {
+    display: flex;
+    flex-direction: column;
+    gap: 8%;
+    width: 27%;
+    height: 100%;
+    /* background-color: yellow; */
+  }
+
+  .primeiraImagemc {
+    width: 100%;
+    height: 30%;
+    /* background-color: orange; */
+  }
+
+  .segundaImagemc {
+    width: 100%;
+    height: 62%;
+    /* background-color: orangered; */
+  }
+
+  .imagensContainer {
+    border-radius: 35px
+  }
+

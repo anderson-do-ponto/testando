@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap"
+      rel="stylesheet"
+    />
+    <title>Emocionômetro</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="../javascript/app.js"></script>
+  </head>
+  <body>
+    <!-- <div class="containerTelaInicial"> -->
+    <header class="topo">
+      <img class="imgTopo" src="../imagens/imagemLadoDireitoLogin.png" alt="" />
+      <div class="perfilUser">
+        <div class="imgPerfil">
+          <img src="../imagens/imagemUser.png" alt="" />
+        </div>
+        <div class="nomePerfil"><p>Anderson Luiz</p></div>
+      </div>
+    </header>
+    <div class="retanglos">
+      <div class="retanglo1"></div>
+      <div class="retanglo2"></div>
+      <div class="retanglo3"></div>
+      <div class="retanglo4"></div>
+      <div class="retanglo5"></div>
+    </div>
+    <main class="conteudo">
+      <nav class="menu">
+        <div class="menuInicioUsuario">
+          <a href="../telaInicial/index.html">
+            <div class="menuInicio">
+              <img src="../imagens/imagemInicio.png" alt="imagemInicio" />
+              <p>Incio</p>
+            </div>
+          </a>
+          <div class="menuUsuarios">
+            <div class="menuImagens" onclick="abrirMenu()">
+              <div class="imagemBotao">
+                <img src="../imagens/imagemUsuario.png" alt="imagemUsuario" />
+                <div id="user">Usuários</div>
+              </div>
+              <img
+                src="../imagens/imagemsetadireita.png"
+                alt="imagemsetadireita"
+              />
+            </div>
+
+            <ul id="uluser" class="uluser">
+              <a href="../professores/index.html"><li>Professor</li></a>
+              <a href="../aluno/index.html"><li>Aluno</li></a>
+            </ul>
+          </div>
+
+          <a href="../emocionometro/index.html">
+            <div class="menuInicio">
+              <img
+                src="../imagens/coracaoEmocionometro.png"
+                alt="coracaoEmocionometro.png"
+              />
+              <p>Emocionômetro</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="menuInferior">
+          <div class="menuInicio">
+            <img
+              src="../imagens/imagemMeuPerfil.png"
+              alt="imagemMeuPerfil.png"
+            />
+            <p>Meu perfil</p>
+          </div>
+          <a class="aSair" href="../index.html">
+            <div class="menuInicio">
+              <img src="../imagens/imagemSair.png" alt="imagemSair.png" />
+              <p>Sair</p>
+            </div>
+          </a>
+        </div>
+      </nav>
+      <div class="containerMain">
+        <div class="cabecalhoNovoCadastro">
+          <div>
+            <a href="../professores/index.html"
+              ><img src="../imagens/imagemVolta.png" alt="" class="imagemVolta"
+            /></a>
+          </div>
+          <div class="novoUsuario">
+            <h3>Editar Usúario > professor</h3>
+          </div>
+        </div>
+        <div class="novoCadastro">
+          <div class="containerCadstro">
+            <h3>Dados do usuario</h3>
+            <form id="cadastroprofessor" class="cadastroprofessor">
+              <div class="containerbox">
+                <div class="inputBox">
+                  <label for="">Nome</label>
+                  <input type="text" id="nomeAt" />
+                </div>
+
+                <div class="inputBox">
+                  <label for="">Perfil</label>
+                  <select name="" id="perfilAt">
+                    <option value=""></option>
+                    <option value="Professor">Professor</option>
+                    <option value="Coordenador">Coordenador</option>
+                  </select>
+                </div>
+
+                <div class="inputBox">
+                  <label for="">Disciplina</label>
+                  <input type="text" id="disciplinaAt" />
+                </div>
+
+                <div class="inputBox">
+                  <label for="ativo" class="ativo">Ativo</label>
+                  <input type="checkbox" id="ativoAt" checked />
+                  <label for="ativoAt" class="switch">
+                    <span class="slider"></span>
+                  </label>
+                </div>
+              </div>
+
+              <button
+                class="botaoSalva"
+                type="button"
+                onclick="editarprofessor()"
+              >
+                Salvar
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- </div> -->
+  </body>
+</html>
